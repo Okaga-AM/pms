@@ -1,0 +1,74 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url('../5_esasase12.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#patient-form,
+#appointment-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+#patient-form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 3.5rem;
+    max-height: 90vh;
+    width: 20vw;
+    border-radius: 0.7rem;
+    background-color: white;
+}
+
+#appointment-form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 3.6rem;
+    max-height: 90vh;
+    width: 20vw;
+    border-radius: 0.7rem;
+    background-color: white;
+}
+
+#appointmnet-form input {
+    padding: 1rem;
+    border-radius: 2rem;
+    border-width: 1px;
+}
+
+#patient-form input {
+    padding: 0.5rem;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-width: 1px;
+}
+
+#patient-title {
+    font-size: medium;
+}
+
+#patient-submit,
+#appointment-button {
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 1rem;
+
+    padding: 0.5rem
+}
+
+#male-id {
+    align-self: center;
+}
+
+#female-id {
+    align-self: center;
+
+}

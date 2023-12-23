@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient</title>
+    <link rel="stylesheet" href="./dist/style.css">
+    <script src="https://kit.fontawesome.com/9c578fafba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form id="appointment-form" action="/submit" method="post">
+        <fieldset>
+            <label for="date">Appointment Date <i class="fa-solid fa-calendar-days"></i></label>
+            <input type="date" required name="date" id="appointment-date">
+            <label for="time">Appointment Time <i class="fa-solid fa-clock"></i></label>
+            <input type="time" required name="time" id="appointment-time">
+            <select id="appointment-type">
+                <option>Select appointment type</option>
+                <option value="general-checkup">General checkup</option>
+                <option value="follow-up">Follow-up</option>
+            </select>
+            <select id="appointment-doctor">
+                <option>Select Doctor</option>
+                <option value=1>Dr. Rasheed</option>
+                <option value=2>Dr. Margaret</option>
+            </select>
+            <button id="appointment-button">Make Appointment</button>
+        </fieldset>
+    </form>
+    
+    <script src="./table data/appointments.js"></script>
+</body>
+</html>
